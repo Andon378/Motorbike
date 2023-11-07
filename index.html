@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="motor.css">
+    <title>Motorbike</title>
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="img/logo.jpg" class="logo">
+            <ul id="mobile">
+                <a href="#"><i id="close" class="fa fa-times-circle" aria-hidden="true"></i></a>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="gallery.html">Choose Bike</a></li>
+                  
+                  <li><a href="#about">Contact Us</a></li>
+              </ul>
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>MOTORBIKE ON THE STREET</h2>
+            <h1>MOTORBIKE BRAND</h1>
+            <p>The brands with the strongest brand personality in descending order 
+    are Kawasaki, Ducati, Yamaha, BMW, KTM, Harley-Davidson, Honda, 
+    and Suzuki.</p>
+    <h3>Choose your colour</h3>
+    <div class="colour-select">
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="black"></div>
+    </div>
+        </div>
+
+    </div>
+
+    <footer id="about">
+        <div class="content">
+    
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Once you have the skills to create a web application from front to back, you are 
+    a full-stack developer. But to become a professional full-stack 
+    developer, you need a job.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+44 7476921912</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>andonov.alex79@gmail.com</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Repair</a></div>
+            <div><a href="#">Electric Bike</a></div>
+            <div><a href="#">Marketing</a></div>
+          </div>
+    
+          <div class="right box">
+            <div class="topic">Contact us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              
+            </form>
+          </div>
+        
+        </div>
+    
+        <div class="bottom">
+          <p>Copyright © 2023 <a href="#">Aleksandar Andonov</a> All rights reserved</p>
+        </div>
+      </footer>
+
+      <script>
+        let redBtn = document.getElementById("red");
+        let blueBtn = document.getElementById("blue");
+        let blackBtn = document.getElementById("black");
+        let bike = document.getElementById("bike");
+
+        redBtn.onclick = function(){
+          bike.style.backgroundImage = "url(img/backgroundred.png)";
+          bike.style.backgroundSize = "60% 70%";
+          bike.style.backgroundRepeat= "no-repeat";
+          bike.style.backgroundColor ="rgb(120, 120, 120)";
+        }
+          blueBtn.onclick = function(){
+          bike.style.backgroundImage = "url(img/backgroundblu.png)";
+          bike.style.backgroundSize = "60% 70%";
+          bike.style.backgroundRepeat= "no-repeat";
+          bike.style.backgroundColor ="rgb(120, 120, 120)";
+          }
+          blackBtn.onclick = function(){
+          bike.style.backgroundImage = "url(img/backgroundblack.jpg)";
+          bike.style.backgroundSize = "60% 70%";
+          bike.style.backgroundRepeat= "no-repeat";
+          bike.style.backgroundColor ="rgb(120, 120, 120)";
+        }
+      </script>
+    
+</body>
+</html>
